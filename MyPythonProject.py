@@ -71,7 +71,7 @@ try:
     col3.metric("Avg Fatalities", f"{avg_fatalities:,.2f}")
     col4.metric("Fatalities Contribution", percent_fatalities)
 
-     st.write("Columns in dataset:", df.columns.tolist())
+    st.write("Columns in dataset:", df.columns.tolist())
 
 
     # =======================
