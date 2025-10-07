@@ -11,8 +11,6 @@ def load_data():
                     "Operator": "Unspecified",
                     "Aircraft": "Unspecified",
                     "Location": "Unspecified"})
-    
-    st.write("Columns in dataset:", df.columns.tolist())
 
      # Make sure fatality columns exist
     if "Fatalities (air)" in df.columns:
@@ -72,6 +70,9 @@ try:
     col2.metric("Total Fatalities", int(total_fatalities))
     col3.metric("Avg Fatalities", f"{avg_fatalities:,.2f}")
     col4.metric("Fatalities Contribution", percent_fatalities)
+
+     st.write("Columns in dataset:", df.columns.tolist())
+
 
     # =======================
     # Research Questions
